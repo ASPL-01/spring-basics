@@ -7,7 +7,7 @@ public class Triangle {
     private int width;
 
     public static double area(List<Triangle> triangles){
-        return 0.3;
+        return triangles.stream().map(t -> t.getArea()).reduce(0d, (acc, cur) -> acc + cur);
     }
 
     public Triangle() {
