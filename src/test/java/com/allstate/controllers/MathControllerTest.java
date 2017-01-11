@@ -44,4 +44,12 @@ public class MathControllerTest {
                 .andExpect(jsonPath("$.original", is(5)))
                 .andExpect(jsonPath("$.factorial", is(120)));
     }
+
+    @Test
+    public void shouldComputeTheFibonacci() throws Exception {
+        this.mvc.perform(get("/math/fibonacci/15"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.x", is(15)))
+                .andExpect(jsonPath("$.fibonacci", is(610)));
+    }
 }

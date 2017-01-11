@@ -28,4 +28,10 @@ public class MathTest {
         int result = Math.factorial(5);
         assertEquals(120, result);
     }
+
+    @Test
+    public void shouldComputeTheFibonacci() throws Exception {
+        int result = Math.fibonacci(15);
+        assertEquals(610, result);
+    }
 }
