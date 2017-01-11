@@ -22,4 +22,10 @@ public class MathTest {
         int result = Math.square(4);
         assertEquals(16, result);
     }
+
+    @Test
+    public void shouldComputeTheFactorial() throws Exception {
+        int result = Math.factorial(5);
+        assertEquals(120, result);
+    }
 }
