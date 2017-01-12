@@ -1,12 +1,10 @@
-package com.galvanize.models;
+package com.allstate.models;
 
 import java.lang.Math;
 
 
 public class Point {
-    //formula for distance = sqrt(((x2-x1)*(x2-x1))+((y2-y1)*(y2-y1)))
-    //formula for slope = (y1-y2)/(x1-x2)
-    //formula for y-int = y - m*x
+
     private int x;
     private int y;
 
@@ -16,7 +14,6 @@ public class Point {
     }
 
     public Point(){
-
     }
 
     public int getX() {
